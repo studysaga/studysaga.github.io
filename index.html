@@ -888,9 +888,9 @@ a .uil {
     top: 90px;
 	display: block;
     z-index: 11000000;
-  background-color: transparent;
-  border-radius: 0;
-  padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
 	transition: all 250ms linear;
 }
 .mono:hover {
@@ -917,6 +917,93 @@ a .uil {
   margin-right: auto;
 }
 }
+
+.progress-wrap {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	height: 46px;
+	width: 46px;
+    z-index: 11000000;
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	box-shadow: inset  0 0 0 2px rgba(255,255,255,0.2);
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	-webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap.active-progress {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+.progress-wrap::after {
+	position: absolute;
+	font-family: 'unicons';
+	content: '\e84b';
+	text-align: center;
+	line-height: 46px;
+	font-size: 24px;
+	color: var(--grey);
+	left: 0;
+	top: 0;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 11000000;
+	-webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap:hover::after {
+	opacity: 0;
+}
+.progress-wrap::before {
+	position: absolute;
+	font-family: 'unicons';
+	content: '\e84b';
+	text-align: center;
+	line-height: 46px;
+	font-size: 24px;
+	opacity: 0;
+	background-image: linear-gradient(298deg, var(--red), var(--yellow));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	left: 0;
+	top: 0;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 11000000;
+	-webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap:hover::before {
+	opacity: 1;
+}
+.progress-wrap svg path { 
+	fill: none; 
+}
+.progress-wrap svg.progress-circle path {
+	stroke: var(--grey);
+	stroke-width: 4;
+	box-sizing:border-box;
+	-webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+body.light .progress-wrap {
+	box-shadow: inset  0 0 0 2px rgba(0,0,0,0.2);
+}
+body.light .progress-wrap::after {
+	color: var(--black-blue);
+}
+body.light .progress-wrap svg.progress-circle path {
+	stroke: var(--black-blue);
+}
 </style>
 
 
@@ -930,11 +1017,6 @@ a .uil {
 	<a class="logo" target="_blank">
 		<img src="https://www.dropbox.com/s/clb8kt8rxxp1og3/Books_Magic_Logo_Template.svg?raw=1" alt="">
 	</a>
-   
-   	<a class="mono" target="_blank">
-		<img src="https://www.dropbox.com/s/clb8kt8rxxp1og3/Books_Magic_Logo_Template.svg?raw=1" alt="">
-	</a>
-
   	<div class="sec-center"> 	
 	  	<input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
 	  	<label class="for-dropdown" for="dropdown">GCE O Levels <i class="uil uil-arrow-down"></i></label>
@@ -942,8 +1024,8 @@ a .uil {
 		  	<input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
 		  	<label class="for-dropdown-sub" for="dropdown-sub">English <i class="uil uil-plus"></i></label>
 	  		<div class="section-dropdown-sub"> 
-	    <a href="#">• Grammar <i class="uil uil-arrow-right"></i></a>
-	    <a href="#">• Vocabulary <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">Grammar <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">Vocabulary <i class="uil uil-arrow-right"></i></a>
                 <a href="#">Writing <i class="uil uil-arrow-right"></i></a>
                 <a href="#">Comprehension <i class="uil uil-arrow-right"></i></a>
                 <a href="#">Listening <i class="uil uil-arrow-right"></i></a>
@@ -952,8 +1034,8 @@ a .uil {
             <input class="dropdown-sub1" type="checkbox" id="dropdown-sub1" name="dropdown-sub1"/>
 		  	<label class="for-dropdown-sub1" for="dropdown-sub1">Chinese / Higher Chinese<i class="uil uil-plus"></i></label>
 	  		<div class="section-dropdown-sub1"> 
-	    <a href="#">• 语法 <i class="uil uil-arrow-right"></i></a>
-	    <a href="#">• 词汇 <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">语法 <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">词汇 <i class="uil uil-arrow-right"></i></a>
                 <a href="#">写作 <i class="uil uil-arrow-right"></i></a>
                 <a href="#">阅读理解 <i class="uil uil-arrow-right"></i></a>
                 <a href="#">口试 <i class="uil uil-arrow-right"></i></a>
@@ -1079,6 +1161,51 @@ a .uil {
                 <a href="#">Security Challenges <i class="uil uil-arrow-right"></i></a>
                 <a href="#">Cyber Security Challenges in a Globalised World <i class="uil uil-arrow-right"></i></a>
                 <a href="#">Transnational Terrorism in a Globalised World <i class="uil uil-arrow-right"></i></a>
-	        <a href="#">SBQ & SRQ Skills <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">SBQ & SRQ Skills <i class="uil uil-arrow-right"></i></a>
   		</div>
   	</div>
+	<div class="progress-wrap">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+<script id="rendered-js" >
+  $(document).ready(function () {"use strict";
+
+    var progressPath = document.querySelector('.progress-wrap path');
+    var pathLength = progressPath.getTotalLength();
+    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+    progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+    progressPath.style.strokeDashoffset = pathLength;
+    progressPath.getBoundingClientRect();
+    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+    var updateProgress = function () {
+      var scroll = $(window).scrollTop();
+      var height = $(document).height() - $(window).height();
+      var progress = pathLength - scroll * pathLength / height;
+      progressPath.style.strokeDashoffset = progress;
+    };
+    updateProgress();
+    $(window).scroll(updateProgress);
+    var offset = 50;
+    var duration = 550;
+    jQuery(window).on('scroll', function () {
+      if (jQuery(this).scrollTop() > offset) {
+        jQuery('.progress-wrap').addClass('active-progress');
+      } else {
+        jQuery('.progress-wrap').removeClass('active-progress');
+      }
+    });
+    jQuery('.progress-wrap').on('click', function (event) {
+      event.preventDefault();
+      jQuery('html, body').animate({ scrollTop: 0 }, duration);
+      return false;
+    });
+
+
+  });
+
+})(jQuery);
+//# sourceURL=pen.js
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
