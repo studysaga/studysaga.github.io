@@ -1,5 +1,3 @@
-<html lang="en" >
-  
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
@@ -424,4 +422,3 @@ a .uil {
   			<a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
   		</div>
   	</div>
-</html>
