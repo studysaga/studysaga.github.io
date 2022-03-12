@@ -185,11 +185,14 @@ body{
   margin-left: 10px;
   transition: transform 200ms linear;
 }
+.for-dropdown {
+  top: 60px;
+}
 .section-dropdown {
   position: absolute;
   padding: 5px;
   background-color: #111;
-  top: 70px;
+  top: 125px;
   left: 0;
   width: 100%;
   border-radius: 4px;
@@ -346,6 +349,504 @@ a .uil {
 .section-dropdown-sub a .uil {
   font-size: 20px;
 }
+.dropdown-sub1:checked + label,
+.dropdown-sub1:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+.dropdown-sub1:checked + label .uil,
+.dropdown-sub1:not(:checked) + label .uil{
+  font-size: 22px;
+}
+.dropdown-sub1:not(:checked) + label .uil {
+  transition: transform 200ms linear;
+}
+.dropdown-sub1:checked + label .uil {
+  transform: rotate(135deg);
+  transition: transform 200ms linear;
+}
+.dropdown-sub1:checked + label:hover,
+.dropdown-sub1:not(:checked) + label:hover{
+  color: #102770;
+  background-color: #ffeba7;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub1{
+  color: #102770;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub1:hover{
+  color: #ffeba7;
+  background-color: #102770;
+}
+
+.section-dropdown-sub1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+.dropdown-sub1:checked ~ .section-dropdown-sub1{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+.section-dropdown-sub1 a {
+  font-size: 14px;
+}
+.section-dropdown-sub1 a .uil {
+  font-size: 20px;
+}
+.dropdown-sub2:checked + label,
+.dropdown-sub2:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+.dropdown-sub2:checked + label .uil,
+.dropdown-sub2:not(:checked) + label .uil{
+  font-size: 22px;
+}
+.dropdown-sub2:not(:checked) + label .uil {
+  transition: transform 200ms linear;
+}
+.dropdown-sub2:checked + label .uil {
+  transform: rotate(135deg);
+  transition: transform 200ms linear;
+}
+.dropdown-sub2:checked + label:hover,
+.dropdown-sub2:not(:checked) + label:hover{
+  color: #102770;
+  background-color: #ffeba7;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub2{
+  color: #102770;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub2:hover{
+  color: #ffeba7;
+  background-color: #102770;
+}
+
+.section-dropdown-sub2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+.dropdown-sub2:checked ~ .section-dropdown-sub2{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+.section-dropdown-sub2 a {
+  font-size: 14px;
+}
+.section-dropdown-sub2 a .uil {
+  font-size: 20px;
+}
+.dropdown-sub3:checked + label,
+.dropdown-sub3:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+.dropdown-sub3:checked + label .uil,
+.dropdown-sub3:not(:checked) + label .uil{
+  font-size: 22px;
+}
+.dropdown-sub3:not(:checked) + label .uil {
+  transition: transform 200ms linear;
+}
+.dropdown-sub3:checked + label .uil {
+  transform: rotate(135deg);
+  transition: transform 200ms linear;
+}
+.dropdown-sub3:checked + label:hover,
+.dropdown-sub3:not(:checked) + label:hover{
+  color: #102770;
+  background-color: #ffeba7;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub3{
+  color: #102770;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub3:hover{
+  color: #ffeba7;
+  background-color: #102770;
+}
+
+.section-dropdown-sub3 {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+.dropdown-sub3:checked ~ .section-dropdown-sub3{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+.section-dropdown-sub3 a {
+  font-size: 14px;
+}
+.section-dropdown-sub3 a .uil {
+  font-size: 20px;
+}
+.dropdown-sub4:checked + label,
+.dropdown-sub4:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+.dropdown-sub4:checked + label .uil,
+.dropdown-sub4:not(:checked) + label .uil{
+  font-size: 22px;
+}
+.dropdown-sub4:not(:checked) + label .uil {
+  transition: transform 200ms linear;
+}
+.dropdown-sub4:checked + label .uil {
+  transform: rotate(135deg);
+  transition: transform 200ms linear;
+}
+.dropdown-sub4:checked + label:hover,
+.dropdown-sub4:not(:checked) + label:hover{
+  color: #102770;
+  background-color: #ffeba7;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub4{
+  color: #102770;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub4:hover{
+  color: #ffeba7;
+  background-color: #102770;
+}
+
+.section-dropdown-sub4 {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+.dropdown-sub4:checked ~ .section-dropdown-sub4{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+.section-dropdown-sub4 a {
+  font-size: 14px;
+}
+.section-dropdown-sub4 a .uil {
+  font-size: 20px;
+}
+.dropdown-sub5:checked + label,
+.dropdown-sub5:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+.dropdown-sub5:checked + label .uil,
+.dropdown-sub5:not(:checked) + label .uil{
+  font-size: 22px;
+}
+.dropdown-sub5:not(:checked) + label .uil {
+  transition: transform 200ms linear;
+}
+.dropdown-sub5:checked + label .uil {
+  transform: rotate(135deg);
+  transition: transform 200ms linear;
+}
+.dropdown-sub5:checked + label:hover,
+.dropdown-sub5:not(:checked) + label:hover{
+  color: #102770;
+  background-color: #ffeba7;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub5{
+  color: #102770;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub5:hover{
+  color: #ffeba7;
+  background-color: #102770;
+}
+
+.section-dropdown-sub5 {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+.dropdown-sub5:checked ~ .section-dropdown-sub5{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+.section-dropdown-sub5 a {
+  font-size: 14px;
+}
+.section-dropdown-sub5 a .uil {
+  font-size: 20px;
+}
+.dropdown-sub6:checked + label,
+.dropdown-sub6:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+.dropdown-sub6:checked + label .uil,
+.dropdown-sub6:not(:checked) + label .uil{
+  font-size: 22px;
+}
+.dropdown-sub6:not(:checked) + label .uil {
+  transition: transform 200ms linear;
+}
+.dropdown-sub6:checked + label .uil {
+  transform: rotate(135deg);
+  transition: transform 200ms linear;
+}
+.dropdown-sub6:checked + label:hover,
+.dropdown-sub6:not(:checked) + label:hover{
+  color: #102770;
+  background-color: #ffeba7;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub6{
+  color: #102770;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub6:hover{
+  color: #ffeba7;
+  background-color: #102770;
+}
+
+.section-dropdown-sub6 {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+.dropdown-sub6:checked ~ .section-dropdown-sub6{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+.section-dropdown-sub6 a {
+  font-size: 14px;
+}
+.section-dropdown-sub6 a .uil {
+  font-size: 20px;
+}
+.dropdown-sub7:checked + label,
+.dropdown-sub7:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+.dropdown-sub7:checked + label .uil,
+.dropdown-sub7:not(:checked) + label .uil{
+  font-size: 22px;
+}
+.dropdown-sub7:not(:checked) + label .uil {
+  transition: transform 200ms linear;
+}
+.dropdown-sub7:checked + label .uil {
+  transform: rotate(135deg);
+  transition: transform 200ms linear;
+}
+.dropdown-sub7:checked + label:hover,
+.dropdown-sub7:not(:checked) + label:hover{
+  color: #102770;
+  background-color: #ffeba7;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub7{
+  color: #102770;
+}
+.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub7:hover{
+  color: #ffeba7;
+  background-color: #102770;
+}
+
+.section-dropdown-sub7 {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+.dropdown-sub7:checked ~ .section-dropdown-sub7{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+.section-dropdown-sub7 a {
+  font-size: 14px;
+}
+.section-dropdown-sub7 a .uil {
+  font-size: 20px;
+}
+
 .logo {
 	position: fixed;
 	top: 40px;
@@ -370,10 +871,10 @@ a .uil {
   filter: brightness(10000%);
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 10000px) {
 .logo {
-	top: 30px;
-	left: 20px;
+	top: 18px;
+	left: 37px;
 }
 .dark-light:checked + label,
 .dark-light:not(:checked) + label{
@@ -381,16 +882,45 @@ a .uil {
   right: 20px;
 }
 }
+
+.mono {
+	position: absolute;
+    top: 90px;
+	display: block;
+    z-index: 11000000;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+	transition: all 250ms linear;
+}
+.mono:hover {
+  background-color: transparent;
+}
+.mono img {
+	height: 46px;
+	width: auto;
+	display: block;
+  transition: all 200ms linear;
+}
+.dark-light:not(:checked) ~ .mono img{
+  filter: brightness(10000%);
+}
+
+@media screen and (max-width: 10000px) {
+.mono {
+  margin-left: auto;
+  margin-right: auto;
+}
+.dark-light:checked + label,
+.dark-light:not(:checked) + label{
+  margin-left: auto;
+  margin-right: auto;
+}
+}
 </style>
 
-<script>
-  window.console = window.console || function(t) {};
-</script>  
-<script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
+
+
 <body translate="no" >
   <input class="dark-light" type="checkbox" id="dark-light" name="dark-light"/>
   	<label for="dark-light"></label>
@@ -400,19 +930,158 @@ a .uil {
 	<a class="logo" target="_blank">
 		<img src="https://www.dropbox.com/s/clb8kt8rxxp1og3/Books_Magic_Logo_Template.svg?raw=1" alt="">
 	</a>
+   
+   	<a class="mono" target="_blank">
+		<img src="https://www.dropbox.com/s/clb8kt8rxxp1og3/Books_Magic_Logo_Template.svg?raw=1" alt="">
+	</a>
 
   	<div class="sec-center"> 	
 	  	<input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
-	  	<label class="for-dropdown" for="dropdown">Dropdown Menu <i class="uil uil-arrow-down"></i></label>
+	  	<label class="for-dropdown" for="dropdown">GCE O Levels <i class="uil uil-arrow-down"></i></label>
   		<div class="section-dropdown"> 
-  			<a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
 		  	<input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
-		  	<label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub <i class="uil uil-plus"></i></label>
+		  	<label class="for-dropdown-sub" for="dropdown-sub">English <i class="uil uil-plus"></i></label>
 	  		<div class="section-dropdown-sub"> 
-	  			<a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
-	  			<a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">• Grammar <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">• Vocabulary <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Writing <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Comprehension <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Listening <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Oral <i class="uil uil-arrow-right"></i></a>
+                	  		</div>
+            <input class="dropdown-sub1" type="checkbox" id="dropdown-sub1" name="dropdown-sub1"/>
+		  	<label class="for-dropdown-sub1" for="dropdown-sub1">Chinese / Higher Chinese<i class="uil uil-plus"></i></label>
+	  		<div class="section-dropdown-sub1"> 
+	    <a href="#">• 语法 <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">• 词汇 <i class="uil uil-arrow-right"></i></a>
+                <a href="#">写作 <i class="uil uil-arrow-right"></i></a>
+                <a href="#">阅读理解 <i class="uil uil-arrow-right"></i></a>
+                <a href="#">口试 <i class="uil uil-arrow-right"></i></a>
+                <a href="#">听力 <i class="uil uil-arrow-right"></i></a>
+          	  		</div>
+ <input class="dropdown-sub3" type="checkbox" id="dropdown-sub3" name="dropdown-sub3"/>
+		  	<label class="for-dropdown-sub3" for="dropdown-sub3">Physics <i class="uil uil-plus"></i></label>
+	  		<div class="section-dropdown-sub3"> 
+	    <a href="#">• Measurement <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">• Kinematics <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Forces <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Mass, Weight & Density <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Turning Effect of Forces  <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Energy, Work & Power <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Pressure <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Temperature <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Kinetic Model of Matter <i class="uil uil-arrow-right"></i></a>
+                <a href="#">TransferThermal Energy <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Thermal Properties of Matter <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Light <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Waves <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Electromagnetic Waves <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Sound <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Static Electricity <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Current Electricity <i class="uil uil-arrow-right"></i></a>
+                <a href="#">D.C. Circuits <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Practical Electricity <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Magnetism <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Electromagnetism <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Electromagnetic Induction <i class="uil uil-arrow-right"></i></a>
+	    	  		</div>
+ <input class="dropdown-sub4" type="checkbox" id="dropdown-sub4" name="dropdown-sub4"/>
+		  	<label class="for-dropdown-sub4" for="dropdown-sub4">Chemistry <i class="uil uil-plus"></i></label>
+	  		<div class="section-dropdown-sub4"> 
+                <a href="#">Kinetic Particle Theory <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Measurement & Experimental Techniques <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Separation & Purification <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Elements, Compounds & Mixtures <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Atomic Structure <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Ionic Bonding <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Covalent & Metallic Bonding <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Writing Chemical Equations <i class="uil uil-arrow-right"></i></a>
+                <a href="#">The Mole <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Chemical Calculations <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Acids & Bases <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Salts <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Oxidation & Reduction <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Metals <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Electrolysis <i class="uil uil-arrow-right"></i></a>
+                <a href="#">The Periodic Table <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Energy Changes <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Speed of Reaction <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Ammonia <i class="uil uil-arrow-right"></i></a>
+                <a href="#">The Atmosphere & Environment <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Organic Chemistry <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Alkanes & Alkenes <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Alcohols & Carboxylic Acids <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Macromolecules <i class="uil uil-arrow-right"></i></a>
+	   	  		</div>
+ <input class="dropdown-sub5" type="checkbox" id="dropdown-sub5" name="dropdown-sub5"/>
+		  	<label class="for-dropdown-sub5" for="dropdown-sub5">Biology <i class="uil uil-plus"></i></label>
+	  		<div class="section-dropdown-sub5"> 
+	    <a href="#">Cells <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">Movement of Substances <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Nutrients <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Enzymes <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Nutrition in Humans <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Nutrition in Plants <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Transport in Humans <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Transport in Plants <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Respiration in Humans <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Excretion in Humans <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Homeostasis <i class="uil uil-arrow-right"></i></a>
+                <a href="#">The Nervous System <i class="uil uil-arrow-right"></i></a>
+                <a href="#">The Human Eye <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Hormones <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Cell Division <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Reproduction in Plants <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Reproduction in Humans <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Heredity <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Molecular Genetics <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Ecology <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Our Impact on the Ecosystem <i class="uil uil-arrow-right"></i></a>
+             	  		</div>
+ <input class="dropdown-sub6" type="checkbox" id="dropdown-sub6" name="dropdown-sub6"/>
+		  	<label class="for-dropdown-sub6" for="dropdown-sub6">Elective Geography <i class="uil uil-plus"></i></label>
+	  		<div class="section-dropdown-sub6"> 
+	    <a href="#">Causes of Tectonic Hazards <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">Landforms & Tectonic Phenomena <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Earthquakes <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Causes of Variable Weather & Changing Climate <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Changes to Earth’s Climate <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Topographical Map Reading Skills <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Geographical Data & Techniques <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Geographical Investigations <i class="uil uil-arrow-right"></i></a>
 	  		</div>
+ <input class="dropdown-sub7" type="checkbox" id="dropdown-sub7" name="dropdown-sub7"/>
+		  	<label class="for-dropdown-sub7" for="dropdown-sub7">Social Studies <i class="uil uil-plus"></i></label>
+	  		<div class="section-dropdown-sub7"> 
+	    <a href="#">Citizenship <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">Challenges in Decision Making <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Managing Conflicting Demands <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Role of Government in Society <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Role of Citizens in Society <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Identity & Diversity <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Immigration Policy <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Economic Opportunities <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Social-Cultural Environment <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Interactions in a Diverse Society <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Exchange & Appreciation in a Diverse Society <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Challenges in a Diverse Society <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Management and Impact of Socio-Cultural Diversity <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Management and Impact of Socio-Economic Diversity <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Globalisation <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Driving Forces of Globalisation <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Global Economy <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Economic Impacts on Countries <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Economic Impacts on Companies <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Economic Impacts on Individuals <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Cultural Homogenisation & Hybridisation <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Homogenisation & Hybirdisation in Entertainment <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Homogenisation & Hybirdisation in Food <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Security Challenges <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Cyber Security Challenges in a Globalised World <i class="uil uil-arrow-right"></i></a>
+                <a href="#">Transnational Terrorism in a Globalised World <i class="uil uil-arrow-right"></i></a>
+	    <a href="#">SBQ & SRQ Skills <i class="uil uil-arrow-right"></i></a>
   			<a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
   			<a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+            <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
   		</div>
   	</div>
