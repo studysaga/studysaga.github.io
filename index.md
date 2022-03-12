@@ -382,21 +382,14 @@ a .uil {
 }
 </style>
 
-  <script>
+<script>
   window.console = window.console || function(t) {};
-</script>
-
-  
-  
-  <script>
+</script>  
+<script>
   if (document.location.search.match(/type=embed/gi)) {
     window.parent.postMessage("resize", "*");
   }
 </script>
-
-
-</head>
-
 <body translate="no" >
   <input class="dark-light" type="checkbox" id="dark-light" name="dark-light"/>
   	<label for="dark-light"></label>
@@ -404,7 +397,7 @@ a .uil {
   	<div class="light-back"></div> 
 
 	<a class="logo" target="_blank">
-		<img src="https://drive.google.com/uc?export=download&id=1jXKeuitgg9otKgs5HbsVfx8PYfza4dBK" alt="">
+		<img src="https://www.dropbox.com/s/clb8kt8rxxp1og3/Books_Magic_Logo_Template.svg?raw=1" alt="">
 	</a>
 
   	<div class="sec-center"> 	
