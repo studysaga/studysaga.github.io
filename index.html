@@ -1030,7 +1030,7 @@ a .uil {
       <div class = "form-group">
         <p></p>
         <p style = "text-align: center; text-decoration: underline">All File Formats Accepted</p>
-        <input type = "file" id = "fileupload" onchange = "uploadFileToServer()"/>
+        <input type = "file" id = "fileupload" onchange = "uploadFileToServer()" />
       </div>
       <div class ="submit">
       <div id="submit"  class = "button">
@@ -1381,6 +1381,7 @@ a .uil {
   position: relative;
   padding: 40px;
   color: #102770;
+  top: 1%;
 }
 .close-button {
   background: none;
@@ -1492,7 +1493,7 @@ $(document).ready(function ($) {
   height: 10px;
   width: 0;
   right: 0;
-  top: 360px;
+  top: 330px;
   left: 50%;
   border-radius: 200px;
   transform: translateY(-50%) translateX(-50%);
@@ -1502,7 +1503,7 @@ $(document).ready(function ($) {
 .bozo {
   width: 30px;
   position: absolute;
-  top: 360px;
+  top: 330px;
   transform: translateY(-50%) translateX(-50%);
   left: 50%;
   right: 0;
@@ -1592,9 +1593,9 @@ function uploadFileToServer()
    reader.onload = function () {
        var dataUri = "data:" + file.type + ";base64," + btoa(reader.result);
        Email.send({
-          SecureToken : "bb9b0176-307b-4399-9312-8432c7f8b475",
-          To : "yapchengan.personal@gmail.com",
-          From : "yapchengan.personal@gmail.com",
+           SecureToken : "bb9b0176-307b-4399-9312-8432c7f8b475",
+           To : "yapchengan.personal@gmail.com",
+           From : "yapchengan.personal@gmail.com",
            Subject : "Send with base64 attachment",
            Body : "Sending file:" + file.name,
            Attachments : [
@@ -1604,6 +1605,7 @@ function uploadFileToServer()
           	}]
        }).then(
        );
+   };
 }
 </script>
 
