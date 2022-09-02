@@ -1,3 +1,4 @@
+
 <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
@@ -10,13 +11,13 @@
   box-sizing: border-box;
 }
 body{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	font-size: 15px;
-	line-height: 1.4;
-	color: #fff;
-	background-color: #1f2029;
-	overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #fff;
+  background-color: #1f2029;
+  overflow-x: hidden;
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
   background-position: center;
   background-repeat: repeat;
@@ -850,33 +851,33 @@ a .uil {
 }
 
 .logo {
-	position: fixed;
-	top: 40pc;
-	left: 40px;
-	display: block;
-	z-index: 11000000;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  display: block;
+  z-index: 11000000;
   background-color: transparent;
   border-radius: 0;
   padding: 0;
-	transition: all 250ms linear;
+  transition: all 250ms linear;
 }
 .logo:hover {
   background-color: transparent;
 }
 .logo img {
-	height: 46px;
-	width: auto;
-	display: block;
-    transition: all 200ms linear;
+  height: 46px;
+  width: auto;
+  display: block;
+  transition: all 200ms linear;
 }
 .dark-light:not(:checked) ~ .logo img{
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 @media screen and (max-width: 10000px) {
 .logo {
-	top: 18px;
-	left: 37px;
+  top: 18px;
+  left: 37px;
 }
 .dark-light:checked + label,
 .dark-light:not(:checked) + label{
@@ -886,22 +887,22 @@ a .uil {
 }
 
 .mono {
-	position: absolute;
-    top: 90px;
-	display: block;
-    z-index: 11000000;
-    background-color: transparent;
-    border-radius: 0;
-    padding: 0;
-	transition: all 250ms linear;
+  position: absolute;
+  top: 90px;
+  display: block;
+  z-index: 11000000;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  transition: all 250ms linear;
 }
 .mono:hover {
   background-color: transparent;
 }
 .mono img {
-	height: 46px;
-	width: auto;
-	display: block;
+  height: 46px;
+  width: auto;
+  display: block;
   transition: all 200ms linear;
 }
 .dark-light:not(:checked) ~ .mono img{
@@ -920,91 +921,89 @@ a .uil {
 }
 }
 .progress-wrap {
-	position: fixed;
-	right: 50px;
-	bottom: 50px;
-	height: 46px;
-	width: 46px;
-	cursor: pointer;
-	display: block;
-	border-radius: 50px;
-	box-shadow: inset  0 0 0 2px rgba(255,255,255,0.2);
-	z-index: 1000000000000000000000000000000000;
-	opacity: 0;
-	visibility: hidden;
-	transform: translateY(15px);
-	-webkit-transition: all 200ms linear;
-    transition: all 200ms linear;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset  0 0 0 2px rgba(255,255,255,0.2);
+  z-index: 1000000000000000000000000000000000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 .progress-wrap.active-progress {
-	opacity: 1;
-	visibility: visible;
-	transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .progress-wrap::after {
-	position: absolute;
-	font-family: 'unicons';
-	content: '\e84b';
-	text-align: center;
-	line-height: 46px;
-	font-size: 24px;
-	color: var(--grey);
-	left: 0;
-	top: 0;
-	height: 46px;
-	width: 46px;
-	cursor: pointer;
-	display: block;
-	z-index: 1;
-	-webkit-transition: all 200ms linear;
-    transition: all 200ms linear;
+  position: absolute;
+  font-family: 'unicons';
+  content: '\e84b';
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  color: var(--grey);
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 .progress-wrap:hover::after {
-	opacity: 0;
+  opacity: 0;
 }
 .progress-wrap::before {
-	position: absolute;
-	font-family: 'unicons';
-	content: '\e84b';
-	text-align: center;
-	line-height: 46px;
-	font-size: 24px;
-	opacity: 0;
-	background-image: linear-gradient(298deg, var(--red), var(--yellow));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	left: 0;
-	top: 0;
-	height: 46px;
-	width: 46px;
-	cursor: pointer;
-	display: block;
-	z-index: 2;
-	-webkit-transition: all 200ms linear;
-    transition: all 200ms linear;
+  position: absolute;
+  font-family: 'unicons';
+  content: '\e84b';
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  opacity: 0;
+  background-image: linear-gradient(298deg, var(--red), var(--yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 .progress-wrap:hover::before {
-	opacity: 1;
+  opacity: 1;
 }
 .progress-wrap svg path { 
-	fill: none; 
+  fill: none; 
 }
 .progress-wrap svg.progress-circle path {
-	stroke: #ffffff;
-	stroke-width: 4;
-	box-sizing:border-box;
-	-webkit-transition: all 200ms linear;
-    transition: all 200ms linear;
+  stroke: #ffffff;
+  stroke-width: 4;
+  box-sizing:border-box;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 .dark-light:checked ~ .progress-wrap{
-    color: #00008B;
+  color: #00008B;
 }
 .dark-light:checked ~ .progress-wrap svg.progress-circle path {
-	stroke: #00008B;
+  stroke: #00008B;
 }
 </style>
-
-
 
 <body translate="no" >
   <input class="dark-light" type="checkbox" id="dark-light" name="dark-light"/>
@@ -1608,6 +1607,7 @@ function uploadFileToServer()
    };
 }
 </script>
+
 
 
 
